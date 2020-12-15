@@ -5,9 +5,13 @@ func greet() -> String {
     return Greeting().greeting()
 }
 
+func helloWorld() -> String {
+    return HelloWorld().helloWorld()
+}
+
 struct ContentView: View {
     var body: some View {
-        Text(greet())
+        Text(helloWorld())
     }
 }
 

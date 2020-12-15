@@ -4,9 +4,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.kmm.myapplication.shared.Greeting
 import android.widget.TextView
+import com.kmm.myapplication.shared.HelloWorld
 
 fun greet(): String {
     return Greeting().greeting()
+}
+
+fun helloWorld() : String {
+    return HelloWorld().helloWorld()
 }
 
 class MainActivity : AppCompatActivity() {
@@ -15,6 +20,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val tv: TextView = findViewById(R.id.text_view)
-        tv.text = greet()
+        tv.text = helloWorld()
     }
 }
